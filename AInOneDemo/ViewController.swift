@@ -117,6 +117,7 @@ extension ViewController {
     }
     
     func callSignUpAPI() {
+        
 //        var param = [String:AnyObject]()
 //        param["User_FirstName"] = txtFname.text as AnyObject
 //        param["User_LastName"] = txtSerName.text as AnyObject
@@ -125,20 +126,20 @@ extension ViewController {
 //        param["Device_Token"] = getUserDefaultValue("Token") as AnyObject?
 //        param["Device_Type"] = DEVICE_TYPE as AnyObject
 //        param["agreementText_Id"] = self.GDPRVersion as AnyObject
-//        
+//
 //        ShowLoaderOnView()
 //        Alamofire.upload(multipartFormData: { (multipartFormData) in
-//            
+//
 //            for (key,value) in param {
 //                multipartFormData.append((value.data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false))!, withName: key)
 //            }
-//            
+//
 //            if(self.image != nil){
 //                if let image1 = UIImageJPEGRepresentation(self.image!, 0.4) {
 //                    multipartFormData.append(image1, withName: "User_Profile", fileName: "profile.png", mimeType: "image/jpg")
 //                }
 //            }
-//            
+//
 //        }, to: URL_SIGNUP, encodingCompletion: { (result) in
 //            // code
 //            switch result {
@@ -179,7 +180,7 @@ extension ViewController {
 //                                }
 //                            }
 //                        } else {
-//                            
+//
 //                            if let dicResp = result.value(forKey: "response") as? [String : AnyObject] {
 //                                if let strUID = dicResp["User_Id"] as? String,
 //                                    let intValue = Int(strUID),
@@ -199,7 +200,7 @@ extension ViewController {
 //                NSLog((encodingError as NSError).localizedDescription)
 //            }
 //        })
-//        
+//
     }
     
     
