@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="Playfie" customModuleProvider="target">
+            <connections>
+                <outlet property="tblView" destination="Dd7-Eu-LSA" id="8kT-Ua-TvK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PBackPic" translatesAutoresizingMaskIntoConstraints="NO" id="Oew-QD-81C">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2z-xf-hDI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-0J-L0g">
+                            <rect key="frame" x="30" y="35" width="80" height="80"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="UtY-fF-hDH"/>
+                                <constraint firstAttribute="width" constant="80" id="nbM-rR-Otb"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gGs-0J-L0g" firstAttribute="leading" secondItem="S2z-xf-hDI" secondAttribute="leading" constant="30" id="HVb-Y6-juW"/>
+                        <constraint firstItem="gGs-0J-L0g" firstAttribute="centerY" secondItem="S2z-xf-hDI" secondAttribute="centerY" id="RFg-8L-l7P"/>
+                        <constraint firstAttribute="height" constant="150" id="pYQ-7S-ZEa"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-Eu-LSA">
+                    <rect key="frame" x="0.0" y="150" width="320" height="418"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dd7-Eu-LSA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="81p-ys-T52"/>
+                <constraint firstItem="Dd7-Eu-LSA" firstAttribute="top" secondItem="S2z-xf-hDI" secondAttribute="bottom" id="B01-Mt-7LC"/>
+                <constraint firstAttribute="bottom" secondItem="Dd7-Eu-LSA" secondAttribute="bottom" id="BYO-6j-ojj"/>
+                <constraint firstItem="Oew-QD-81C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dio-LK-P6N"/>
+                <constraint firstItem="S2z-xf-hDI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="I5E-ue-rGg"/>
+                <constraint firstAttribute="trailing" secondItem="Dd7-Eu-LSA" secondAttribute="trailing" id="M53-dM-s6R"/>
+                <constraint firstAttribute="bottom" secondItem="Oew-QD-81C" secondAttribute="bottom" id="S25-em-LmU"/>
+                <constraint firstAttribute="trailing" secondItem="S2z-xf-hDI" secondAttribute="trailing" id="gef-sY-E3I"/>
+                <constraint firstItem="Oew-QD-81C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hdK-mt-0ZP"/>
+                <constraint firstItem="S2z-xf-hDI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="htV-en-gM8"/>
+                <constraint firstAttribute="trailing" secondItem="Oew-QD-81C" secondAttribute="trailing" id="tGD-xw-MYw"/>
+            </constraints>
+            <point key="canvasLocation" x="24" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PBackPic" width="750" height="1184"/>
+        <image name="logo" width="600" height="600"/>
+    </resources>
+</document>
